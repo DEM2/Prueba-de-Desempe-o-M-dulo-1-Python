@@ -2,6 +2,7 @@ from processes import register_student,search, delete, update, display
 from validation import get_non_empty_text, get_positive_number
 from csv_manager import save_csv
 
+# option : Register
 def option_1(students):
     id=get_positive_number("Enter the Student identification: ")
     name=get_non_empty_text("Enter the name of the student: ")
@@ -11,12 +12,14 @@ def option_1(students):
     
     result=register_student(students, id, name, age, program, state)
     print(result)
-    
+
+# option : Viw Students list 
 def option_2 (students):
     display(students)
 
+# option : Search Student
 def option_3(students):
-    id=get_positive_number("which students are you looking?: ")
+    id=get_positive_number("which students are you looking? write the Id: ")
     result=search(students, id)
     
     if result!= None:
@@ -24,6 +27,7 @@ def option_3(students):
     else :
         print("Any student was found with this identification number")
         
+# option : Update student Information
 def option_4(students):
     id=get_positive_number("Enter the Student identification: ")
     result="Any student was found with this identification number"
@@ -47,12 +51,14 @@ def option_4(students):
             result=update(student, name, age, program, state)
             
     print(result)
-        
+
+# option : Delete a student
 def option_5(students):
-    id=get_positive_number("which students do you want to delete?: ")
+    id=get_positive_number("which students do you want to delete? Write the Id: ")
     result=delete(students, id)
     print(result)
-    
+
+# option : Save CSV"
 def option_6(students):
       # By default, The inventory.csv file is where I store the information when the user selects the option 
       print(save_csv(students, "students.csv"))
