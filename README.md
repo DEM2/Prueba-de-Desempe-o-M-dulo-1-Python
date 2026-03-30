@@ -24,7 +24,11 @@ The system uses CSV files to store inventory data.
 
 - `students.csv` → Main file used to store product data  
 
+## How to Run the Project 
 
+```bash 
+python3 app.py
+```
 ## Author
 
 Daniel Mendoza  
