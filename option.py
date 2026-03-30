@@ -15,7 +15,10 @@ def option_1(students):
 
 # option : Viw Students list 
 def option_2 (students):
-    display(students)
+    if students:
+        display(students)
+    else:
+        print("No information has been saved")
 
 # option : Search Student
 def option_3(students):

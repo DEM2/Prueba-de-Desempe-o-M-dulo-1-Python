@@ -1,7 +1,13 @@
 from validation import get_positive_number
+from csv_manager import upload
 from System import menu
 to_continue=True
 students=[]
+
+# allow that the system upload the students information stored in students.csv before start 
+up=upload("students.csv")
+if up:
+   students.extend(up)
 
 while to_continue:
     
