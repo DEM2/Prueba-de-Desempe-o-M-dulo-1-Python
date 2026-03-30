@@ -29,6 +29,10 @@ The system uses CSV files to store inventory data.
 ```bash 
 python3 app.py
 ```
+## Flowchart
+
+![Flowchart](Images/Students_registration_system.png) 
+
 ## Author
 
 Daniel Mendoza  
