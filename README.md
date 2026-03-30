@@ -27,8 +27,8 @@ The system uses CSV files to store inventory data.
 ## How to Run the Project 
 
 ```bash 
-python app.py 
-
+python app.py
+```
 ## Author
 
 Daniel Mendoza  
